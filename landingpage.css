@@ -1,0 +1,292 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    color: rgb(0, 0, 0);
+}
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+ .content-bottom img{
+    margin: 1em 0 0;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .content-bottom p{
+     text-align: justify;
+     padding-top: 20px;
+     padding-left: 40px;
+     padding-right: 40px;
+ }
+
+ footer {
+    background-color: #000000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    padding: 2em;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+footer h2{
+    text-align: center;
+    color: #1f8dd6;
+    
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    margin: 1em 0;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer ul li a{
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    transition: 100ms;
+}
+footer ul li a:hover{
+    color: var(--primary)
+}
+
+
+.stiky-footer{
+    position: sticky;
+    top: 100%;
+    text-align: center;
+}
+
+.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    background: #1f8dd6;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+.home-menu {
+    background: #2d3e50;
+}
+.pure-menu.pure-menu-fixed {
+    
+    border-bottom: none;
+    
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: #6FBEF3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+.splash-container {
+    background: #1f8dd6;
+    z-index: 1;
+    overflow: hidden;
+    background-image: url(imglogin/bgastronout2.jpg);
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 3px solid #1f8dd6;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+.splash-subhead {
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 87%;
+    left: 0%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+
+}
+
+.content {
+    padding: 1em 1em 3em;
+}
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+    color:#1f8dd6;
+}
+
+.content-head-ribbon {
+    color: white;
+}
+
+.content-subhead a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+.ribbon {
+    background: #1f8dd6;
+    color: #000000;
+}
+.content-head-ribbon {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.content-ribbon{
+    text-align: center;
+}
+.footer {
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 48em) {
+
+    body {
+        font-size: 16px;
+    }
+
+    
+    .home-menu {
+        text-align: left;
+    }
+        .home-menu ul {
+            float: right;
+        }
+
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+
+    .splash-head {
+        font-size: 250%;
+    }
+
+    .l-box-lrg {
+        border: none;
+    }
+
+}
+
+
+@media (min-width: 78em) {
+    
+    .splash-head {
+        font-size: 300%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #232323;
+}
